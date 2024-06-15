@@ -1,0 +1,11 @@
+---
+- name: Test connection to my servers                           # название playbook 
+  hosts: all                                                    # на все сервера
+  become: yes                                                   # права суперпользователя
+
+  tasks:                                                        # задания
+
+  - name: Ping my servers                                       # название задания для внутренней навигации
+    ping:                                                       # проверка соединения при помощи пинга
+
+
